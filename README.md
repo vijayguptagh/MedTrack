@@ -21,10 +21,11 @@ Footer
 ![Screenshot 2023-11-06 042029](https://github.com/vijayguptagh/MedTrack/assets/120735063/9a6e515c-70c6-4207-b042-a965d2509030)
 
 Google Maps Location Of shop
+![Screenshot 2023-11-06 035515](https://github.com/vijayguptagh/MedTrack/assets/120735063/f330c17c-5259-4118-82da-abe1c177cd19)
 
 Admin and Shopkeeper Panel
-![Screenshot 2023-11-06 035515](htt![Screenshot 2023-11-06 044449](https://github.com/vijayguptagh/MedTrack/assets/120735063/a3615778-0d3a-4aab-b5ff-a73b563a8382)
+![Screenshot 2023-11-06 044449](https://github.com/vijayguptagh/MedTrack/assets/120735063/a3615778-0d3a-4aab-b5ff-a73b563a8382)
 ![Screenshot 2023-11-06 044532](https://github.com/vijayguptagh/MedTrack/assets/120735063/fc9920bb-c7c3-4b25-9cf1-ac50514f2ed7)
 
-ps://github.com/vijayguptagh/MedTrack/assets/120735063/f330c17c-5259-4118-82da-abe1c177cd19)
+
 
