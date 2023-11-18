@@ -1,5 +1,5 @@
 #Demo link - https://youtu.be/Rx9_qRX2zqg?si=r4uXVGCTj-WzH7kt
-[See Demo!](https://youtu.be/Rx9_qRX2zqg?si=r4uXVGCTj-WzH7kt)
+
 # MedTrack
 •	MedTrack is an innovative solution addressing the critical challenge Innovative solution for locating rare and emergency medicines swiftly.
 •	Empowers customers to find nearby pharmacies with needed medications for quick purchase.
