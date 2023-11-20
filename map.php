@@ -5,14 +5,17 @@ include('./components/connect.php');
 include('./components/customer_header.php');
 
 if (isset($_GET['shop'])) {
+    //if map is called by product description page
     $shop_id = $_GET['shop'];
     $sel = "SELECT * FROM shopkeeper_ac WHERE id = $shop_id";
     $sel_ex = mysqli_query($conn, $sel);
     $fetch = mysqli_fetch_assoc($sel_ex);
     $add = $fetch['address'];
 } else if (isset($_GET['sname'])) {
+    //map called at product list page
     $add = $_GET['sname'];
 } else {
+    //if map is not for specific shop
     $add = null;
 }
 
