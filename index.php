@@ -1,6 +1,6 @@
 <?php
 
-$page_title = 'MedTrack - HomePage';
+$page_title = 'MedTrack - A New Way to Buy Medicine';
 include('./components/connect.php');
 include('./components/customer_header.php');
 
