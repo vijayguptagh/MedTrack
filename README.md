@@ -1,11 +1,11 @@
 #Demo link - https://youtu.be/Rx9_qRX2zqg?si=r4uXVGCTj-WzH7kt
 
 # MedTrack
-•	MedTrack is an innovative solution addressing the critical challenge Innovative solution for locating rare and emergency medicines swiftly.
-•	Empowers customers to find nearby pharmacies with needed medications for quick purchase.
-•	Supports three user roles: customers, shopkeepers, and administrators.
-•	Shopkeepers easily add medicines after admin approval, ensuring certificate authenticity.
-•	Customers can access maps for precise pharmacy locations and directions.
+•	MedTrack is an innovative solution addressing the critical challenge Innovative solution for locating rare and emergency medicines swiftly. <br>
+•	Empowers customers to find nearby pharmacies with needed medications for quick purchase. <br>
+•	Supports three user roles: customers, shopkeepers, and administrators. <br>
+•	Shopkeepers easily add medicines after admin approval, ensuring certificate authenticity. <br>
+•	Customers can access maps for precise pharmacy locations and directions. <br>
 
 Technology Used : Bootstrap,PHP,MYSQL,Glidejs
 
