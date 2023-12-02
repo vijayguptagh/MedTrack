@@ -38,8 +38,7 @@ CREATE TABLE `admin_ac` (
 --
 
 INSERT INTO `admin_ac` (`id`, `name`, `password`) VALUES
-(18, 'admin123', '40bd001563085fc35165329ea1ff5c5ecbdbbeef'),
-(20, 'admin_222', '1c6637a8f2e1f75e06ff9984894d6bd16a3a36a9');
+(18, 'admin123', '40bd001563085fc35165329ea1ff5c5ecbdbbeef');
 
 -- --------------------------------------------------------
 
