@@ -1,4 +1,5 @@
 <!-- ======= Footer ======= -->
+<script src="../assets/js/admin_script.js"></script>
 <footer id="footer" class="footer">
 		<div class="copyright">
 			&copy; Copyright <strong><span>NearBy ShopWay</span></strong>. All Rights Reserved
@@ -14,7 +15,7 @@
 
 	<!-- Vendor JS Files -->
 	<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="../assets/js/admin_script.js"></script>
+	
     
 </body>
 
