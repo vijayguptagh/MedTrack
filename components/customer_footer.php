@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="footer__top">
 				<div class="footer-top__box">
-					<h3>Medicines</h3>
+					<h3>MEDICINES</h3>
 					<a href="#">Trending</a>
 					<a href="#">New</a>
 					<a href="#">Specials</a>
@@ -22,7 +22,7 @@
 					<a href="#">Site Map</a>
 				</div>
 				<div class="footer-top__box">
-					<h3>Login</h3>
+					<h3>LOGIN</h3>
 					<a href="#">Shopkeeper Login</a>
 					<a href="#">Admin Login</a>
 				</div>

@@ -5,8 +5,32 @@ include('./components/customer_header.php');
 $id = $_GET['show'];
 
 // Increment view count for this product in the 'most_viewed' table
-$update_view_count_query = "UPDATE `most_viewed` SET view_count = view_count + 1 WHERE product_id = '$id'";
-mysqli_query($conn, $update_view_count_query);
+// $update_view_count_query = "UPDATE `most_viewed` SET view_count = view_count + 1 WHERE product_id = '$id'";
+// mysqli_query($conn, $update_view_count_query);
+
+
+$select_query = "select * from `products` where id ='$id'";
+$result_query = mysqli_query($conn, $select_query);
+$row = mysqli_fetch_assoc($result_query);
+
+$name = $row['name'];
+$id = $row['id'];
+$category = $row['category'];
+$price = $row['price'];
+$image_01 = $row['image_01'];
+$image_02 = $row['image_02'];
+$image_03 = $row['image_03'];
+$details = $row['details'];
+$stock = $row['stock'];
+$shop_name = $row['shop_name'];
+$shop_id = $row['shop_id'];
+
+$query = "select * from `shopkeeper_ac` where id = '$shop_id'";
+$exe = mysqli_query($conn, $query);
+$value = mysqli_fetch_assoc($exe);
+$add = $value['address'];
+
+
 
 ?>
 
@@ -30,66 +54,43 @@ mysqli_query($conn, $update_view_count_query);
 
 <main>
 
-    <!-- Product section-->
-    <!-- fetching from database -->
-    <?php
-
-    $select_query = "select * from `products` where id ='$id'";
-    $result_query = mysqli_query($conn, $select_query);
-    $row = mysqli_fetch_assoc($result_query);
-
-    $name = $row['name'];
-    $category = $row['category'];
-    $price = $row['price'];
-    $image_01 = $row['image_01'];
-    $image_02 = $row['image_02'];
-    $image_03 = $row['image_03'];
-    $details = $row['details'];
-    $stock = $row['stock'];
-    $shop_name = $row['shop_name'];
-    $shop_id = $row['shop_id'];
-
-    $query = "select * from `shopkeeper_ac` where id = '$shop_id'";
-    $exe = mysqli_query($conn, $query);
-    $value = mysqli_fetch_assoc($exe);
-    $add = $value['address'];
-
-
-    echo "
+    
         <section class='py-5'>
             <div class='container px-4 px-lg-5 my-5'>
                 <div class='row gx-4 gx-lg-5 align-items-center'>
                     <div class='col-md-6'>
                         <!-- Main Image -->
-                        <img class='card-img-top mb-5 mb-md-0' src='./uploaded_img/$image_01' alt='Main Image' id='mainImage' />
+                        <img class='card-img-top mb-5 mb-md-0' src='./uploaded_img/<?php echo $image_01?>' alt='Main Image' id='mainImage' />
 
                         <!-- Thumbnail Images -->
                         <br><br>
                         <div class='d-flex m-10%'>
                             <div style='width: 30%;'>
-                                <img class='img-thumbnail' src='./uploaded_img/$image_01' alt='Thumbnail 1' onclick='changeMainImage(this)' />
+                                <img class='img-thumbnail' src='./uploaded_img/<?php echo $image_01?>' alt='Thumbnail 1' onclick='changeMainImage(this)' />
                             </div>
                             <div style='width: 30%;'>
-                                <img class='img-thumbnail' src='./uploaded_img/$image_02' alt='Thumbnail 2' onclick='changeMainImage(this)' />
+                                <img class='img-thumbnail' src='./uploaded_img/<?php echo $image_02?>' alt='Thumbnail 2' onclick='changeMainImage(this)' />
                             </div>
                             <div style='width: 30%;'>
-                                <img class='img-thumbnail' src='./uploaded_img/$image_03' alt='Thumbnail 3' onclick='changeMainImage(this)' />
+                                <img class='img-thumbnail' src='./uploaded_img/<?php echo $image_03?>' alt='Thumbnail 3' onclick='changeMainImage(this)' />
                             </div>
                         </div>
                     </div>
 
                     <div class='col-md-6'>
-                        <h1 class='display-5 fw-bolder'>$name</h1>
+                        <h1 class='display-5 fw-bolder'><?php echo $name ?></h1>
                         <br>
-                        <p>Price : &#8377;$price</p>
-                        <p>Disease : $category</p>
-                        <p>Quantity : $stock</p>
-                        <div>Shop Name:  <a href='map.php?shop=$shop_id' target='_blank'>$shop_name</a></div>
-                        <br>
-                        <p>Shop Address : <code>$add</code></p>
-                        <p>Location on Map : <a href='map.php?shop=$shop_id' target='_blank'><i class='bi bi-geo-alt-fill'></i></a> </p>
-                        <p>Product details : $details</p>
-                    </div>
+                        <p>Price : &#8377; <?php echo $price ?></p>
+                        <p>Disease : <?php echo $category ?></p>
+                        <p style="margin-bottom:10px">Quantity : <?php echo $stock ?></p>
+                        <a target="_blank" href="checkout.php?product_id=<?php echo $row['id']; ?>"><button type="buynow"><img src='./assets/img/buy.png' style='height:60px;' ></button></a>
+
+
+                        <p style='margin-top:10px'>Shop Name:  <a href='map.php?shop=<?php echo $shop_id ?>' target='_blank'><?php echo $shop_name ?></a></p>
+                        <p>Shop Address : <code><?php echo $add ?></code></p>
+                        <p>Location on Map : <a href='map.php?shop=<?php echo $shop_id ?>' target='_blank'><i class='bi bi-geo-alt-fill'></i></a> </p>
+                        <p>Product details : <?php echo $details ?></p>
+                    </img>
                 </div>
             </div>
 
@@ -103,8 +104,8 @@ mysqli_query($conn, $update_view_count_query);
 
         </section>
 
-          ";
-    ?>
+          
+    
 
 
 

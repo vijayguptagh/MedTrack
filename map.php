@@ -69,7 +69,8 @@ if (isset($_GET['shop'])) {
 </head>
 
 <body >
-    <!-- Navbar
+    <!-- Navbar -->
+     <!--
     <div class="container-fluid p-0" style="width: 98%;">
         <div class="navbar navbar-expand-lg" style="background-color: blue;">
             <div class="container-fluid">
@@ -105,8 +106,8 @@ if (isset($_GET['shop'])) {
                     </ul>
                 </div>
             </div>
-    </div> -->
-    <!-- <div>
+    </div>  -->
+    <div>
         <br>
         <label for="startLocation">Start Location:</label>
         <input type="text" id="startLocation" placeholder="Enter start location" value="Don Bosco Institute of Technology, Vidyavihar">
@@ -190,7 +191,7 @@ if (isset($_GET['shop'])) {
                 }
             });
         }
-    </script> -->
+    </script>
     <img src="z.png" alt="" srcset="" style="display: flex; justify-content:center;">
 
 
